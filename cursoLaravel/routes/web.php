@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contatos/{id?}', function($id = "id não inserido"){
+Route::get('/contatos/{id?}', function($id = "id não identificado"){
     return "contatos = $id";
+});
+
+Route::post('/contatos', function(){
+    dd($_POST);
+    return "contatos Post";
+});
+
+Route::put('/contatos', function(){
+    return "contatos Put";
 });
