@@ -98,7 +98,6 @@
                         <input type="text" name="nome" placeholder="nome/put"/>
                         <button>Enviar</button>
                     </form>
-
                 </div>
             </div>
         </div>

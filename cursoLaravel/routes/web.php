@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/contatos/{id?}', function($id = "id não identificado"){
     return "contatos = $id";
 });
-
+/*
 Route::post('/contatos', function(){
     dd($_POST);
     return "contatos Post";
@@ -27,3 +27,9 @@ Route::post('/contatos', function(){
 Route::put('/contatos', function(){
     return "contatos Put";
 });
+*/
+route::get('/contatos/{id?}', ['uses'=>'contatosController@index']);
+
+route::post('/contatos', ['uses'=>'contatosController@criar']);
+
+route::put('/contatos', ['uses'=>'contatosController@editar']);
