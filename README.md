@@ -1,2 +1,2 @@
 # curso introducao laravel
-curso de introdução ao laravel
+esse repositório contém os exercícios do curso de introdução ao laravel
