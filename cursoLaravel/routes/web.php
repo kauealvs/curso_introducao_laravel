@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contatos', function (){
-    return 'contatos';
+Route::get('/contatos/{id?}', function($id = "id não inserido"){
+    return "contatos = $id";
 });
