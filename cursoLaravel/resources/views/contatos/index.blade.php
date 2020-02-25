@@ -1,14 +1,34 @@
-<h3>Essa é a view de contatos</h3>
+@extends('layout.site')
 
-<table border="2">
-    <tr>
-        <td><b>Nome</b></td>
-        <td><b>Telefone</b></td>
-    </tr>
-@foreach($contatos as $contato)
+@section('titulo', 'contatos')
+
+
+@section('conteudo')
+    <h3>Essa é a view de contatos</h3>
+    <table border="2">
+        <Tr>
+            <td>
+                Nome
+            </td>
+            <td>
+                Telefone
+            </td>
+        </Tr>
+    @foreach ($contatos as $contato)
+        
         <tr>
-            <td>{{$contato ->nome}}</td>
-            <td>{{$contato ->tel}}</td>
-        </tr> 
-@endforeach
-<table border="2">
+            <td>
+                {{$contato -> nome}}
+            </td>
+            <td>
+                {{$contato -> tel}}
+            </td>
+        </tr>
+
+    @endforeach
+    </table>
+@endsection
+
+
+
+

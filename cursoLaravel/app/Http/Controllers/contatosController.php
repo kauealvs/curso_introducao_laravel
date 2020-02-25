@@ -15,6 +15,10 @@ class contatosController extends Controller
             (object)["nome"=>"daniel", "tel"=>"4565373845"],
             (object)["nome"=>"lara", "tel"=>"5373845"]
         ];
+
+        $contato = new\App\Contato();
+        dd($contato->lista());
+
         return view('contatos.index', compact('contatos'));
     }
 
