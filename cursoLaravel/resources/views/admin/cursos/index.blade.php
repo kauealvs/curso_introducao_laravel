@@ -24,17 +24,18 @@
                         <td>{{ $registro->id }}</td>
                         <td>{{ $registro->titulo }}</td>
                         <td>{{ $registro->descricao }}</td>
-                        <td><img width="120" src="{{asset($registro->imagem)}}" alt="">{{ $registro->titulo }}</td>
-                        <td>{{ $registro->pulicado }}</td>
-                        <td>{{ $registro->acao }}</td>
+                        <td><img width="120" src="{{asset($registro->imagem)}}"></td>
+                        <td>{{ $registro->publicado }}</td>
                         <td>
-                        <a class="btn deep-orange"href="{{route('admin.cursos.editar', $registro->id)}}"></a>
-                        <a class="btn deep-red "href="{{route('admin.cursos.deletar', $registro->id)}}"></a>
-                        </td>
+                            {{ $registro->acao }}
+                            <a class="btn deep-red"href="{{route('admin.cursos.editar', $registro->id)}}">Editar</a>
+                            <a class="btn red "href="{{route('admin.cursos.deletar', $registro->id)}}">Deletar</a></td>
+                        <td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
+            <br>
             <div class="row">
             <a class="btn blue" href="{{route('admin.cursos.adicionar')}}">Adicionar</a>
             </div>
