@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as'=>'site.home','uses'=>'Site\homeController@index']);
 
 Route::get('/contatos/{id?}', function($id = "id não identificado"){
     return "contatos = $id";
