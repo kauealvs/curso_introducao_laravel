@@ -16,6 +16,10 @@ class UsuarioSeeder extends Seeder
             'name' => "kaue",
             'email' => "admin@gmail.com",
             'password' => bcrypt("123456"),
+
+            'name' => "Carolina",
+            'email' => "carol@gmail.com",
+            'password' => bcrypt("45678"),
         ];
 
         if(User::where('email','=', $dados['email'])->count()) {

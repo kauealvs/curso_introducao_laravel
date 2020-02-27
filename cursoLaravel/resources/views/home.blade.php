@@ -12,7 +12,7 @@
               <div class="col s12 m3">
                 <div class="card">
                   <div class="card-image">
-                    <img src="{{ asset($curso->imagem)}}" height="120" width="60">
+                    <img src="{{ asset($curso->imagem)}}" height="100" width="auto">
                   </div>
                   <div class="card-content" >
                     <h4>{{ $curso->titulo}}</h4>
